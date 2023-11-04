@@ -1,5 +1,8 @@
 # MailDev
 　ローカルネットワークで使えるメールサーバを構築する
+ 
+  MailDevはSMTP（送信側）なので、対になるPOPをDovecot火何かで作成したいと思っている。<br>
+  （ブランチ切って動作検証し、問題なければmainを更新）
 
 ## OS
 　Rocky Linux 9.2<br>
