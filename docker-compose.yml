@@ -1,8 +1,15 @@
+# Windowsで使用する場合はDockerfileのディレクトリの
+# スラッシュをバックスラッシュに変更すること。
+# build: ./Dockerfile ->　build: .\Dockerfile
+
 version: '3'
 services:
   maildev:
     container_name: maildev
     build: ./Dockerfile
+    restart: always
+    environment:
+      - TZ=Asia/Tokyo
     ports:
       - "1080:1080"
       - "1025:1025"
