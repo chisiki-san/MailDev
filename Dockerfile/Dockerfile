@@ -15,5 +15,3 @@ RUN npm install iconv --save
 RUN npm prune
 RUN npm cache clean --force
 RUN rm -rf /tmp/*
-
-CMD [ "/bin/maildev" ]
