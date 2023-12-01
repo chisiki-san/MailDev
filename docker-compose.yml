@@ -14,5 +14,5 @@ services:
     ports:
       - "1080:1080"
       - "1025:1025"
-    command: /bin/maildev
-    #command: bin/maildev --incoming-user testuser01 --incoming-pass testuser01
+    #command: /bin/maildev
+    command: bin/maildev --incoming-user testsender01 --incoming-pass testsender01
