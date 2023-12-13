@@ -32,6 +32,7 @@ msg['Subject'] = subject
 msg.attach(MIMEText(message, 'html'))
 
 # Connect to the SMTP server and send the email
+# SMTP認証を使用しない場合、server.login()は不要
 with smtplib.SMTP(smtp_server, smtp_port) as server:
     server.login(smtp_username, smtp_password)
     server.send_message(msg)
